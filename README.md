@@ -15,7 +15,7 @@ This project implements a simple yet functional calculator that allows users to 
 - **User-Friendly Interface:** Features easily clickable buttons for digits (0-9) and operators.
 - **Clear Functionality:** Includes a "C" (Clear) button to reset the display.
 - **Equals Button:** Calculates and displays the result when the "=" button is pressed.
-- **Responsive Layout:** Designed with CSS to be reasonably adaptable to different screen sizes.
+- **Responsive Layout:** Currently not responsive. Only works best in desktop or laptop (wide screens).
 - **Client-Side Implementation:** Entirely built with HTML, CSS, and JavaScript for fast, in-browser execution.
 
 ## Technologies Used
