@@ -2,7 +2,7 @@
 
 # Basic Calculator
 
-A fundamental web based calculator built using HTML for structure, CSS for styling, and JavaScript for handling calculations.
+A fundamental web-based calculator built using HTML for structure, CSS for styling, and JavaScript for handling calculations.
 
 ## Overview
 
