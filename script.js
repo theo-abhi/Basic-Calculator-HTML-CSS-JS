@@ -54,10 +54,15 @@ function tapOperator(operatorValue) {
 // Function called when equals (=) button is pressed
 
 function tapResult() {
-  try {
-    resultScreen.textContent = eval(calculateValue);
-  } catch (error) {
-    resultScreen.textContent = "Error";
+  // Prevent the equals button from being pressed
+  // if the calculateValue has operator at the end
+  if (operators.some((operator) => calculateValue.at(-1) == operator)) return;
+  else {
+    try {
+      resultScreen.textContent = eval(calculateValue);
+    } catch (error) {
+      resultScreen.textContent = "Error";
+    }
   }
 }
 
