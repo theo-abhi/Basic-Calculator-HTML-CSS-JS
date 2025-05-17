@@ -1,5 +1,5 @@
-const calculateScreen = document.querySelector(".calculate");
-const resultScreen = document.querySelector(".result");
+const calculateScreen = document.querySelector(".calculate-screen");
+const resultScreen = document.querySelector(".result-screen");
 
 // Variable to store the calculation value
 let calculateValue = "";
@@ -12,7 +12,7 @@ function addCalculateScreen(value) {
   // Append the value to the calculation screen
   calculateValue += value;
   // Update the calculation screen display
-  calculateScreen.textContent = calculateValue;
+  calculateScreen.value = calculateValue;
 }
 
 // Function called when a number is pressed
@@ -43,9 +43,9 @@ function tapOperator(operatorValue) {
   // If there is a previous result,
   // use that as the starting value
   // for the next calculation
-  if (resultScreen.textContent != "") {
-    calculateValue = resultScreen.textContent;
-    resultScreen.textContent = "";
+  if (resultScreen.value != "") {
+    calculateValue = resultScreen.value;
+    resultScreen.value = "";
   }
 
   addCalculateScreen(operatorValue);
@@ -59,9 +59,9 @@ function tapResult() {
   if (operators.some((operator) => calculateValue.at(-1) == operator)) return;
   else {
     try {
-      resultScreen.textContent = eval(calculateValue);
+      resultScreen.value = eval(calculateValue);
     } catch (error) {
-      resultScreen.textContent = "Error";
+      resultScreen.value = "Error";
     }
   }
 }
@@ -69,9 +69,9 @@ function tapResult() {
 // Function called when All-Clear (AC) button is pressed
 function tapClear() {
   // clear the calculation screen display
-  calculateScreen.textContent = "";
+  calculateScreen.value = "";
   // clear the result screen display
-  resultScreen.textContent = "";
+  resultScreen.value = "";
   // clear the calculation value
   calculateValue = "";
 }
@@ -83,7 +83,7 @@ function tapDelete() {
   // from the calculation string
   calculateValue = calculateValue.slice(0, -1);
   // Update calculate screen display
-  calculateScreen.textContent = calculateValue;
+  calculateScreen.value = calculateValue;
   // Clear the result screen
-  resultScreen.textContent = "";
+  resultScreen.value = "";
 }
