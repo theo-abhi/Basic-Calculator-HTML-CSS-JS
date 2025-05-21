@@ -1,40 +1,64 @@
 # Basic-Calculator-HTML-CSS-JS
 
-# Basic Calculator
+# Basic-Calculator-App-HTML-CSS-JS
 
-A fundamental web-based calculator built using HTML for structure, CSS for styling, and JavaScript for handling calculations.
+A simple and functional calculator app built using **HTML**, **CSS**, and **JavaScript**. This project is designed to demonstrate basic front-end skills, including DOM manipulation, styling, and handling user inputs.
 
-## Overview
+## 🚀 Features
 
-This project implements a simple yet functional calculator that allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. It provides a clean and intuitive interface for performing quick calculations directly in the web browser. Being built entirely with client-side technologies means it's lightweight and doesn't require any server-side processing.
+- Basic arithmetic operations: **Addition**, **Subtraction**, **Multiplication**, **Division**
+- Clear and backspace functions
+- Real-time input and result display
+- Keyboard support (optional)
+- Responsive and intuitive UI design
 
-## Features
+## 🖼️ Preview
 
-- **Standard Arithmetic Operations:** Supports addition (+), subtraction (-), multiplication (\*), and division (/).
-- **Clear Display:** Shows the current input and results in a clear, digital-style display.
-- **User-Friendly Interface:** Features easily clickable buttons for digits (0-9) and operators.
-- **Clear Functionality:** Includes a "C" (Clear) button to reset the display.
-- **Equals Button:** Calculates and displays the result when the "=" button is pressed.
-- **Responsive Layout:** Currently not responsive. Only works best in desktop or laptop (wide screens).
-- **Client-Side Implementation:** Entirely built with HTML, CSS, and JavaScript for fast, in-browser execution.
+![App Screenshot](./assets/Calculator.png)
 
-## Technologies Used
+## 🛠️ Tech Stack
 
-- **HTML:** Defines the structure and elements of the calculator's interface (buttons, display).
-- **CSS:** Styles the appearance of the calculator, including button design, layout, and display styling.
-- **JavaScript:** Implements the core logic for handling button clicks, performing calculations, and updating the display.
+- **HTML5** – Structure of the calculator
+- **CSS3** – Styling and responsive layout
+- **JavaScript (ES6)** – Core calculator logic and interactivity
 
-## How to Use
+## 📁 Project Structure
 
-1. Clone or download this repository.
-2. Open the `index.html` file in your web browser.
-3. Use the on-screen buttons to input numbers and operators.
-4. Press the "=" button to see the result.
-5. Press the "C" button to clear the display.
+Basic-Calculator-App-HTML-CSS-JS/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
 
-## Potential Future Enhancements
+## 🧠 How It Works
 
-- Adding support for more advanced operations (e.g., square root, percentages).
-- Implementing error handling for invalid operations (e.g., division by zero).
-- Improving the visual design and user experience.
-- Incorporating keyboard input support.
+1. User inputs numbers and operators via buttons.
+2. Display updates in real time to reflect current input.
+3. Pressing `=` computes and displays the result.
+4. The `AC` button clears the input and result.
+5. The `DEL` button lets you delete the last digit or operator.
+
+## 📦 Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/Basic-Calculator-App-HTML-CSS-JS.git
+
+2. Open index.html in your web browser.
+
+No build tools or external dependencies required.
+
+✨ Future Improvements
+
+1. Add keyboard input support
+
+2. Support decimal and negative numbers more robustly
+
+3. Add history of calculations
+
+4. Improve layout for very small screens
+
+5.Implement scientific calculator features (square root, power, etc.)
+
+```
